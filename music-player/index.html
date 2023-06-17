@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Music Player</title>
+     <!-- <link rel="stylesheet" href="https://unpkg.com/eva-icons"> -->
+     <script src="./eva-icons/eva.js"></script>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+     <div class="player-container">
+          <!-- Song -->
+          <div class="img-container">
+              <img src="img/jacinto-1.jpg" alt="Album Art">
+          </div>
+          <h2 id="title">Electric Chill Machine</h2>
+          <h3 id="artist">Sebastian</h3>
+          <audio src="music/jacinto-1.mp3"></audio>
+          <!-- Progress -->
+          <div class="progress-container" id="progress-container">
+              <div class="progress" id="progress"></div>
+              <div class="duration-wrapper">
+                  <span id="current-time">0:00</span>
+                  <span id="duration">2:06</span>
+              </div>
+          </div>
+          <!-- Controls -->
+          <div class="player-controls">
+              <span><i class="control " data-eva="skip-back-outline" id="prev" title="Previous"></i></span>
+              <span id="play"><i class="main-button eva" data-eva="play-circle-outline" id="play" title="play"></i></span>
+              <span id="pause"><i class="main-button " data-eva="pause-circle-outline" id="pause" title="pause"></i></span>
+              <span ><i class="control " data-eva="skip-forward-outline" id="next" title="Next"></i></span>
+          </div>
+
+            
+      </div>
+      <footer>
+          <p>Made with 🧡 by <em>Sebastian</em> .</p>
+      </footer>
+      <script>
+        eva.replace()
+      </script>
+     <!-- script -->
+     <script src="./script.js"></script>
+</body>
+</html>

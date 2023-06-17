@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+	
+}
+
+@font-face {
+    font-family: "Garamond-M";
+    src: url(./fonts/CormorantGaramond-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Garamond-B";
+    src: url(./fonts/CormorantGaramond-Bold.ttf);
+}
+
+body {
+    background-color: black;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+    height: 100vh;
+}
+
+.cover {
+    display: block;
+    position: fixed;
+    height: 85vh;
+    min-height: 20rem;
+    top: 50%;
+    right: 0%;
+    object-fit: cover;
+    transform: translate(50%, -50%);
+    z-index: -1;
+    filter: grayscale(1) opacity(0.17);
+    animation: fadeIn 2s ease-in-out, fadeOut 2s 98.5s ease-in-out forwards;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.container {
+    position: absolute;
+    top: 100%;
+    transition: top 98s 2s linear;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem auto 4rem;
+    width: fit-content;
+}
+
+.title img {
+    width: 3rem;
+    margin-left: .4rem;
+}
+
+h1 {
+    font-family: "Garamond-B";
+    color: rgb(228, 224, 224);
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.infinite__words {
+    color: rgba(228, 224, 224, 0.836);
+    width: 70%;
+    min-width: 22rem;
+    margin: 0 auto;
+    /* font-family: "Garamond-M"; */
+    font-size: 1.7rem;
+    text-align: justify;
+}

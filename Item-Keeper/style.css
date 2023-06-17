@@ -1,0 +1,156 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    background-color: #181a1e;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.grocery-card{
+    width: 80%;
+    margin-top: 4rem;
+    min-width: 19.5rem;
+    max-width: 35rem;
+    min-height: 30vh;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #202528;
+    box-shadow: 0 2rem 3rem rgba(0,0,0,0.4);
+}
+
+
+.grocery-card input{
+    height: 1.8rem;
+    width: 50%;
+    border-radius: 4px 0px 0px 4px;
+    border: none;
+    text-align: center;
+    box-shadow: 0 2rem 3rem rgba(0,0,0,0.4);
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.grocery-card .add-btn{
+    height: 1.8rem;
+    border-radius: 0px 9px 9px 0;
+    width: 5rem;
+    font-weight: bolder;
+    padding: .3rem;
+    background-color: #edeffd;
+    cursor: pointer;
+    color: #353b3d;
+    border: none;
+}
+
+.grocery-card form {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+.grocery-card h1{
+    margin-top: 3rem;
+    color: #edeffd;
+}
+.grocery-card .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem;
+    margin: 1.8rem 0 0 0;
+}
+
+.grocery-card .item p {
+    font-weight: bold;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    color: #edeffd;
+}
+
+.grocery-card .info{
+    color: #beb9ba;
+    font-style: italic;
+    padding-top: .7rem;
+}
+.none{
+    visibility: hidden;
+}
+
+.grocery-card .none{
+    visibility: none;
+}
+
+
+.grocery-card .item .btn-container{
+    width: 6rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: none;
+    align-items: center;
+
+}
+
+.grocery-card .item .btn-container button  {
+    font-size: 1.6rem;
+    font-weight: bolder;
+    padding-top: .24rem;
+    background-color: #202528;
+    border-radius: 5px;
+    width: 2.5rem;
+}
+
+.btn-container .edit-btn{ 
+    color: #edeffd;
+}
+
+.btn-container .delete-btn{
+    color: #ff7782;
+}
+ 
+
+.noBorder {
+    border: 0 solid black;
+    transition: all .3s ease-out;
+
+}
+.danger {
+    border: 3px solid #ff7782;
+    transition: all .2s ease-out;
+}
+
+.success{
+    border: 3px solid #41f1b6;
+    transition: all .2s ease-out;
+
+}
+.grocery-card .clear-btn {
+    margin: 1rem 0 2rem 0;
+    width: 4.5rem;
+    height: 1.5rem;
+    border-radius: 7px;
+    background-color: #ff7782;
+    /* margin-bottom: 3rem; */
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.comment{
+    text-align: center;
+    margin-top: 2rem;
+    color: #a2a3ac;
+}
+
+.comment span{
+    color: #c51010;
+}
+

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			http-equiv="X-UA-Compatible"
+			content="IE=edge"
+		/>
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<link rel="shortcut icon" href="./images/keyboard.svg" type="image/x-icon">
+		<link
+			rel="stylesheet"
+			href="style.css"
+		/>
+		<title>Typing Speed App</title>
+	</head>
+	<body>
+		<h1>SpeedTest</h1>
+		<section>
+			<div class="speed__container">
+				<div id="speed__meter" class="speed__meter">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+					>
+					<defs>
+						<linearGradient id="gradient" x1="0%" y1="0%" x2="110%" y2="0%">
+							<stop offset="0%" stop-color="blue" />
+						  <stop offset="100%" stop-color="red" />
+						</linearGradient>
+					  </defs>
+
+						<circle
+							fill="none"
+							stroke="#5f5f5f"
+							id="space"
+						/>
+						<circle
+							fill="none"
+							id="indicator"
+							stroke="url(#gradient)"
+						/>
+					</svg>
+					<h3 id="speed__value">0%</h3>
+					<span id="wordspersecond">0WPS</span>
+				</div>
+				<div class="speed__metrics">
+					<div class="container">
+						<div class="result">
+							<div>
+								<img src="./images/uparrow.svg" alt="">
+								<p>Highest Score</p>
+							</div>
+							<p id="high"></p>
+							
+						</div>
+						<div class="result middle">
+							<div class="">
+								<img src="./images/downarrow.svg" alt="">
+								<p>Lowest Score</p>
+							</div>
+							<p id="low"></p>
+							
+						</div>
+						<div class="result">
+							<div>
+								<img src="./images/leftrightarrow.svg" alt="">
+								<p>Average Score</p>
+							</div>
+							<p id="average"></p>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			<div  class="test__container">
+				<label for="usertext">Type your text here :</label>
+				<textarea name="usertext" id="usertext"></textarea>
+			</div>
+		</section>
+		<script src="script.js"></script>
+	</body>
+</html>

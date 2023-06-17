@@ -1,0 +1,12 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "dev": "sass ./style.scss ./style.css -w",
+    "compile": "tsc script.ts -w"
+  },
+  "author": "",
+  "license": "ISC"
+}

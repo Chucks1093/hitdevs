@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Montserrat";
+}
+* img, * label, * textarea, * svg {
+  display: block;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("./font/Montserrat-Regular.ttf");
+}
+body {
+  background-color: rgb(41, 41, 41);
+}
+
+h1 {
+  text-align: center;
+  margin: 1.9rem 0 1rem 0;
+  font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: 1.2px;
+  color: aliceblue;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 90%;
+  margin: 0 auto;
+}
+
+section .speed__container {
+  display: grid;
+  place-items: center;
+  padding: 2rem 0 0 0;
+}
+
+section .speed__metrics {
+  margin: 0rem 0 1rem 0;
+}
+
+section .speed__metrics .container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2.4rem;
+}
+section .speed__metrics .container .result > p {
+  text-align: center;
+  font-size: 0.9rem;
+}
+section .speed__metrics .container .result > p > span {
+  display: inline;
+  font-size: 0.7rem;
+  text-align: center;
+  color: rgba(230, 230, 230, 0.349);
+}
+section .speed__metrics .container .result.middle {
+  margin: 0 3rem;
+}
+section .speed__metrics .container .result div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 0.5rem 0;
+}
+section .speed__metrics .container .result div p {
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+section .speed__metrics .container img {
+  width: 1rem;
+  display: block;
+  margin: 0 0.5rem 0 0;
+}
+
+section .speed__meter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 23rem;
+  height: 23rem;
+  border-style: solid;
+  border-color: rgb(66, 65, 65);
+  border-radius: 50%;
+}
+section .speed__meter svg {
+  position: absolute;
+  width: 23rem;
+  height: 23rem;
+}
+section .speed__meter svg #indicator {
+  transition: all 700ms ease;
+}
+section .speed__meter h3 {
+  position: absolute;
+  font-size: 3.5rem;
+}
+section .speed__meter span {
+  position: absolute;
+  bottom: 10%;
+}
+
+section .test__container {
+  padding: 3rem 2rem 0 2rem;
+}
+section .test__container label {
+  font-size: 1.2rem;
+}
+section .test__container textarea {
+  margin: 3rem 0rem 0 0;
+  width: 100%;
+  height: 14rem;
+  border-radius: 0.6rem;
+  color: rgb(207, 204, 204);
+  padding: 1rem;
+  background-color: rgb(53, 51, 51);
+  border: 2px solid gray;
+}
+section .test__container textarea:focus {
+  border: 0px solid red;
+}
+
+/*# sourceMappingURL=style.css.map */
