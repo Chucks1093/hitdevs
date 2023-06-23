@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Blogs</title>
+		<link rel="shortcut icon" href="./images/filled-star.svg" type="image/x-icon">
+		<link
+			rel="stylesheet"
+			href="./styles/note.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="./styles/note-query.css"
+		/>
+	</head>
+	<body>
+		<aside>
+			<h3>Hitdevs</h3>
+			<img
+				id="add__btn"
+				src="./images/add.svg"
+				alt=""
+			/>
+		</aside>
+		<main>
+			<header>
+				<form
+					class="search__box"
+					action=""
+				>
+					<img
+						src="../assets/images/search.svg"
+						alt=""
+					/>
+					<input
+						type="text"
+						name=""
+						id=""
+						placeholder="Search"
+					/>
+				</form>
+			</header>
+			<h1>Sticky-Notes📝</h1>
+			<section
+				id="notes"
+				class="notes"
+			>
+				<article class="no__notes">
+					You have not made any note. Click on the add button to
+					create a note.
+				</article>
+			</section>
+		</main>
+		<section
+			id="note__query"
+			class="note__query"
+		>
+			<form action="">
+				<label for="title">Title:</label>
+				<input
+					type="text"
+					name="title"
+					id="title"
+					required
+				/>
+				<label
+					for="theme"
+					id="theme__label"
+					>Theme:</label
+				>
+				<div
+					id="theme-container"
+					class="theme-container"
+				>
+					<span class="theme first active"></span>
+					<span class="theme second"></span>
+					<span class="theme third"></span>
+					<span class="theme fourth"></span>
+					<span class="theme fifth"></span>
+				</div>
+				<label for="content">Content :</label>
+				<textarea
+					name="content"
+					id="content"
+					required
+				></textarea>
+				<div class="btn__container">
+					<button type="button" class="delete__btn"></button>
+					<button type="submit" class="submit__btn">Add</button>
+				</div>
+			</form>
+		</section>
+		<script src="./script/note.js"></script>
+	</body>
+</html>

@@ -1,0 +1,220 @@
+
+.note__query {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background-color: #3b3b3b85;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+
+
+.note__query form {
+    position: relative;
+    width: 40%;
+    bottom: 2rem;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: .8rem;
+    
+}
+
+
+.note__query label {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+
+.note__query input {
+    width: 3rem;
+    height: 2.4rem;
+    width: 100%;
+    border-radius: .3rem;
+    border: 1px solid #bdbdbd;
+    padding: 0 .6rem;
+
+
+
+}
+.theme-container {
+    display: flex;
+    justify-content: space-around;
+}
+.note__query .theme {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    position: relative;
+    border: 0;
+    cursor: pointer;
+    background-color: #e2dfdf4b;
+}
+
+.note__query .theme.active {
+    border: 3px solid #0000ff57;
+
+}
+
+.note__query .theme::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 1.9rem;
+    width: 1.9rem;
+    border-radius: 50%;
+    border: 0;
+    -webkit-appearance: none;
+    appearance: none;
+    user-select: none;
+    background-color: #0d6efd;
+}
+
+.theme.first::before  {
+    background-color: #cccccc;
+    color: #333333;
+}
+
+.theme.second::before  {
+    background-color: #f19553ec;
+    color: #333333;
+}
+.theme.third::before  {
+    color: #ede6ff;
+    background-color: #ab7dd8;
+}
+.theme.fourth::before  {
+    background-color: #bde4f9;
+    color: #000080;
+}
+.theme.fifth::before  {
+    color: #2f4f4f;
+    background-color: #c3da83;
+}
+
+.note__query .theme::-webkit-color-swatch {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 1.9rem;
+    width: 1.9rem;
+    border-radius: 50%;
+    border: 0;
+    -webkit-appearance: none;
+    appearance: none;
+    user-select: none;
+}
+
+.note__query .btn__container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+.note__query .submit__btn {
+    width: 7rem;
+    height: 2.9rem;
+    display: block;
+    margin-left: auto;
+    background-color: #0d6efd;
+    border: 0;
+    font-weight: 600;
+    border-radius: .4rem;
+    color: white;
+    cursor: pointer;
+}
+
+.note__query .submit__btn:hover{
+    background-color: #0d6dfdbd;
+}
+
+.note__query .submit__btn:active{
+    background-color: #0000ffc9;
+}
+
+.note__query .delete__btn {
+    background-image: url(../images/delete-gray.svg);
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-size: 2rem ;
+    width: 4rem;
+    height: 2.9rem;
+    display: block;
+    background-color: #ffffff;
+    font-weight: 600;
+    color: white;
+    border: 1px solid gray;
+    border-radius: .4rem;
+    cursor: pointer;
+}
+
+.note__query .delete__btn:hover{
+    border: none;
+    background-image: url(../images/delete.svg);
+    background-color: #ff3939;
+}
+
+.note__query .delete__btn:active{
+    background-color: #fa5656ce;
+}
+
+
+
+.note__query textarea {
+    resize: none;
+    width: 100%;
+    height: 7rem;
+    padding: .6rem .6rem 0;
+    border-radius: .3rem;
+    border: 1px solid #bdbdbd;
+}
+
+
+
+@keyframes showModal {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.03);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+@keyframes closeModal {
+    0% {
+        visibility: visible;
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+        visibility: visible;
+    }
+    100% {
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+@keyframes openModal {
+    0% {
+        visibility: hidden;
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+        visibility: visible;
+    }
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
