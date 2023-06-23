@@ -17,7 +17,7 @@ The notes are stored  using the local storage API  to prevents users from losing
 Clone the project
 
 ```bash
-  git clone https://github.com/victorcodess/backstage-talks
+  git clone hhttps://github.com/Chucks1093/hitdevs/tree/main/sticky-notes
 ```
 
 ## Learnings
