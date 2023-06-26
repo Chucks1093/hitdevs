@@ -29,9 +29,6 @@ Each project folder contains its own README file with detailed information about
 
 🤝 This repository is a personal collection of projects, and contributions are not expected. However, if you have suggestions or improvements, feel free to open an issue or submit a pull request.
 
-## License
-
-📄 The projects in this repository are open source and released under the [MIT License](LICENSE).
 
 ## Acknowledgements
 
