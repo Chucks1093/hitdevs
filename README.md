@@ -8,9 +8,9 @@
 
 🙌 I had the privilege of being mentored by two remarkable individuals who founded communities helped me in my frontend journey. Their guidance and expertise were invaluable in my journey to enhance my skills and understanding of web development.
 
-1. 👤 [Amazing Agu]([amazing-profile-link](https://github.com/enyichiaagu)) - Founder of [**Code House**](community1-link).
+1. 👤 [**Amazing Agu**](https://github.com/enyichiaagu) - Founder of [**Code House**](community1-link).
 
-2. 👤 [Goodness Chukwudi]([chukwudi-profile-link](https://github.com/Goodness-Chukwudi)) - Founder of [**Hitdevs**](community2-link).
+2. 👤 [**Goodness Chukwudi**](https://github.com/Goodness-Chukwudi) - Founder of [**Hitdevs**](community2-link).
 
 ## Goals and Learning Outcomes
 
