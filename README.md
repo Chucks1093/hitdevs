@@ -1,4 +1,4 @@
-# 🗺 **Journey to Front-End Excellence**
+# 🗺 **Front-End Development Journey**
 
 
 🚀 This repository contains a diverse collection of projects that I built while working to improve my front-end development skills. These projects were developed under the mentorship of two highly experienced individuals who are the founders of the communities I was fortunate to be a part of.
